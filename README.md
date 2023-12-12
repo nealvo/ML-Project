@@ -19,5 +19,19 @@ This repository showcases a comprehensive analysis of the famous Iris dataset. T
 
 The initial data analysis provides insights into the structure of the dataset. Basic information, summary statistics, and visualizations help understand the characteristics of the features and target labels.
 
+
+## Data Analysis
+
+The initial data analysis provides insights into the structure of the dataset. Basic information, summary statistics, and visualizations help understand the characteristics of the features and target labels.
+
 ```python
-# print(df.describe())
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv('iris.csv')
+
+# Display basic information about the dataset
+print(df.info())
+
+# Display summary statistics
+print(df.describe())
